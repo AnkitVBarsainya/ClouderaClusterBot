@@ -1,0 +1,281 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "Cluster Manager",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Awaiting"
+    },
+    {
+      "name": "Bye"
+    },
+    {
+      "name": "ClusterStatus"
+    },
+    {
+      "name": "Complement"
+    },
+    {
+      "name": "FormalQuestions"
+    },
+    {
+      "name": "Greetings"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "NoRestart"
+    },
+    {
+      "name": "RestartService"
+    }
+  ],
+  "entities": [
+    {
+      "name": "entity_1"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "hello",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "thank you",
+      "intent": "Complement",
+      "entities": []
+    },
+    {
+      "text": "thanks",
+      "intent": "Complement",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "how are you?",
+      "intent": "FormalQuestions",
+      "entities": []
+    },
+    {
+      "text": "good evening",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "how are you doing",
+      "intent": "FormalQuestions",
+      "entities": []
+    },
+    {
+      "text": "what's up",
+      "intent": "FormalQuestions",
+      "entities": []
+    },
+    {
+      "text": "good bye",
+      "intent": "Bye",
+      "entities": []
+    },
+    {
+      "text": "bye",
+      "intent": "Bye",
+      "entities": []
+    },
+    {
+      "text": "hey there",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "hey buddy",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "how was your day",
+      "intent": "FormalQuestions",
+      "entities": []
+    },
+    {
+      "text": "hi mate",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "no need",
+      "intent": "NoRestart",
+      "entities": []
+    },
+    {
+      "text": "start it",
+      "intent": "RestartService",
+      "entities": []
+    },
+    {
+      "text": "thanks very much",
+      "intent": "Complement",
+      "entities": []
+    },
+    {
+      "text": "restart it",
+      "intent": "RestartService",
+      "entities": []
+    },
+    {
+      "text": "that won't be necessary",
+      "intent": "NoRestart",
+      "entities": []
+    },
+    {
+      "text": "take care mate",
+      "intent": "Bye",
+      "entities": []
+    },
+    {
+      "text": "okay, see you later",
+      "intent": "Bye",
+      "entities": []
+    },
+    {
+      "text": "that's okay.",
+      "intent": "NoRestart",
+      "entities": []
+    },
+    {
+      "text": "check cluster status",
+      "intent": "ClusterStatus",
+      "entities": []
+    },
+    {
+      "text": "how's cluster doing?",
+      "intent": "ClusterStatus",
+      "entities": []
+    },
+    {
+      "text": "cluster in good shape?",
+      "intent": "ClusterStatus",
+      "entities": []
+    },
+    {
+      "text": "is everything ok with the cluster?",
+      "intent": "ClusterStatus",
+      "entities": []
+    },
+    {
+      "text": "cloudera cluster",
+      "intent": "ClusterStatus",
+      "entities": []
+    },
+    {
+      "text": "cloudera manager",
+      "intent": "ClusterStatus",
+      "entities": []
+    },
+    {
+      "text": "connect cloudera manager and check status",
+      "intent": "ClusterStatus",
+      "entities": []
+    },
+    {
+      "text": "ok. let me know",
+      "intent": "Awaiting",
+      "entities": []
+    },
+    {
+      "text": "ok. i'm waiting.",
+      "intent": "Awaiting",
+      "entities": []
+    },
+    {
+      "text": "will wait.",
+      "intent": "Awaiting",
+      "entities": []
+    },
+    {
+      "text": "let me know once done.",
+      "intent": "Awaiting",
+      "entities": []
+    },
+    {
+      "text": "sure. keep me posted",
+      "intent": "Awaiting",
+      "entities": []
+    },
+    {
+      "text": "no that's fine.",
+      "intent": "NoRestart",
+      "entities": []
+    },
+    {
+      "text": "not necessary . i ' ll check it myself",
+      "intent": "NoRestart",
+      "entities": []
+    },
+    {
+      "text": "don't restart.",
+      "intent": "NoRestart",
+      "entities": []
+    },
+    {
+      "text": "yes. go ahead and start it",
+      "intent": "RestartService",
+      "entities": []
+    },
+    {
+      "text": "ok. restart it",
+      "intent": "RestartService",
+      "entities": []
+    },
+    {
+      "text": "restart servicename",
+      "intent": "RestartService",
+      "entities": [
+        {
+          "entity": "entity_1",
+          "startPos": 8,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "start servicename",
+      "intent": "RestartService",
+      "entities": [
+        {
+          "entity": "entity_1",
+          "startPos": 6,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "can you restart servicename for me",
+      "intent": "RestartService",
+      "entities": [
+        {
+          "entity": "entity_1",
+          "startPos": 16,
+          "endPos": 26
+        }
+      ]
+    }
+  ]
+}
